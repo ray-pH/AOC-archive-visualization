@@ -58,3 +58,7 @@ a {
 a:hover {
     color: #00ff00;
 }
+
+.day-image>img{
+    width: 500px;
+}
