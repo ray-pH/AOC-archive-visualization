@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <a class="header-title" href="https://adventofcode.com/2023">Advent Of Code [2023]</a><br>
+                <span class="header-title-line2">visualization</span>
+            </div>
+            <div class="header-separator"></div>
+            <div>
+                <a href="https://github.com/ray-pH/AOC-archive">[Solutions: GitHub]</a>
+            </div>
+        </div>
+        <div class="content">
+            I made this page just to share my visualization of the solutions for the <em>Advent Of Code 2023</em>!
+            This year, i wrote my solutions is <em>Prolog</em>. It's available on <a href="https://github.com/ray-pH/AOC-archive">github.com/ray-pH/AOC-archive</a>
+            <div class="day">
+                <h2>
+                    Day 5: If You Give A Seed A Fertilizer
+                    <a href="https://adventofcode.com/2023/day/5">&#x2197;</a>
+                </h2>
+                The diagram shows the mapping from <em>seed</em>, <em>soil</em>, all the way to the <em>target location</em>. The <em>yellow line</em> shows the seed which has the <em>lowest location number</em>.
+                <br><br>
+                <i>Diagram for the Example input</i>
+                <div class="day-image">
+                    <image src="./assets/05ex.png" width="500px">
+                </div>
+                <i>Diagram for my input</i>
+                <div class="day-image">
+                    <image src="./assets/05.png" width="500px">
+                </div>
+            </div>
+            <div class="day">
+                <h2>
+                    Day 8: Haunted Wasteland
+                    <a href="https://adventofcode.com/2023/day/8">&#x2197;</a>
+                </h2>
+                The diagram shows the network. 
+                <br><br>
+                <i>*you can always right click and open the image in new tab if you need a better resolution</i>
+                <div class="day-image">
+                    <image src="./assets/08.svg" width="500px">
+                </div>
+                <br>
+                I also made a visualization for each loop separately.
+                <details class="day8-detail">
+                    <summary>Each Loop Separately</summary>
+                    <image src="./assets/08/graph_0.svg" width="500px">
+                    <image src="./assets/08/graph_1.svg" width="500px">
+                    <image src="./assets/08/graph_2.svg" width="500px">
+                    <image src="./assets/08/graph_3.svg" width="500px">
+                    <image src="./assets/08/graph_4.svg" width="500px">
+                    <image src="./assets/08/graph_5.svg" width="500px">
+                </details>
+                <br><br>
+                <i>
+                People are a bit upset with this one based on what people said in the subreddit. It's not that the problem is hard, it's just a lot of people thinks that the problem is somewhat poorly worded. 
+                <br><br>
+                The simplest solution to this one is using LCM, 
+                but it's not clear that it can be solved that way, 
+                there's no indication that the path will loop, that the target will be reached after a loop, that the length of the instruction fits nicely with the length of the cycle, and more hidden assumptions.
+                <br><br>
+                You can see that every loop has these exact same pattern,
+                the first step from the <em>starting point</em> always lands them on the loop, and the <em>end point</em> is always a step away behind those points.
+                </i>
+                <div class="day-image">
+                    <image src="./assets/08a.png" width="200px">
+                </div>
+            </div>
+            <div class="day">
+                <h2>
+                    Day 10: Pipe Maze
+                    <a href="https://adventofcode.com/2023/day/10">&#x2197;</a>
+                </h2>
+                In the diagram, the <em>white lines</em> indicate the <em>pipes</em>, the <em>dark green region</em> just shows you the "inner region" enclosed by the pipes, and the <em>light green squares</em> represent <em>tiles</em> that are in the inner region.
+                <br><br>
+                <div class="day-image">
+                    <image src="./assets/10.png" width="500px">
+                </div>
+            </div>
+            <div class="day">
+                <h2>
+                    Day 11: Cosmic Expansion
+                    <a href="https://adventofcode.com/2023/day/11">&#x2197;</a>
+                </h2>
+                The yellow dots shows the location of the <em>galaxies</em>. 
+                <br><br>
+                I like the fact that the simple rule of only expanding empty rows and columns give rise to something that resembles the clustering of galaxies, somewhat similar to the real space expansion.
+                <div class="day-image">
+                    <image src="./assets/11.gif" width="500px">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
