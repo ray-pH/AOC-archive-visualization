@@ -62,3 +62,10 @@ a:hover {
 .day-image>img{
     width: 500px;
 }
+
+a.yellow {
+    color: #ffff66;
+}
+a.yellow:hover {
+    color: #ffffff;
+}
